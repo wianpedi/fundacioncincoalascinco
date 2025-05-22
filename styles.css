@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ff0000, #000000);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1, h2, h3 {
+        color: #f4f4f4;
+    }
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 10px; 
+}
+
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.revistas-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.revista {
+    flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.revista img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; 
+    max-height: 200px; 
+}
+
+
+
+@media (max-width: 768px) {
+    .revista {
+        flex: 1 1 calc(50% - 20px); /* En pantallas medianas, ajusta a dos revistas por fila */
+    }
+}
+
+@media (max-width: 479px) {
+    .revista {
+        flex: 1 1 calc(100% - 20px); /* En pantallas pequeñas, una revista por fila */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
